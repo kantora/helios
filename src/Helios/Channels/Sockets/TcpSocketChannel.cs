@@ -20,7 +20,7 @@ namespace Helios.Channels.Sockets
         ///     Create a new instance
         /// </summary>
         public TcpSocketChannel()
-            : this(new Socket(SocketType.Stream, ProtocolType.Tcp))
+            : this(new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
         {
         }
 
